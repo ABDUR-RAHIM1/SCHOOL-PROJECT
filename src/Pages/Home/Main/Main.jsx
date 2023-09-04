@@ -1,11 +1,11 @@
 import React from 'react'
-import AboutInfo from './AboutInfo'
-import NoticeBoard from './NoticeBoard'
-import InstituteInfo from './InstituteInfo'
-import SIdebar from './SIdebar'
-import Gallary from './Gallary'
-import AcademicInfo from './AcademicInfo'
-import Comitee from './Comitee'
+import AboutInfo from './MainContent/AboutInfo'
+import NoticeBoard from './MainContent/NoticeBoard'
+import InstituteInfo from './MainContent/InstituteInfo'
+import SIdebar from './Sidebar/SIdebar'
+import Gallary from './MainContent/Gallary'
+import AcademicInfo from './MainContent/AcademicInfo'
+import Comitee from './MainContent/Comitee'
 
 function Main() {
   return (
@@ -18,7 +18,7 @@ function Main() {
             <AcademicInfo/>
             <Comitee/>
          </div>
-         <div className="sidebar mt-7 md:mt-0 w-full  md:w-25">
+         <div className="sidebar mr-1 mt-7 md:mt-0 w-full  md:w-25">
            <SIdebar/>
          </div>
     </div>
