@@ -1,6 +1,7 @@
 import React from 'react'
 import Info from './Info'
 import img from "../../../../../assets/images/principle.png"
+import {motion} from "framer-motion"
 function Principle() {
     const info = [
         {
@@ -20,7 +21,13 @@ function Principle() {
     return (
         <>
             <h1 className='heading text-center'>প্রধান শিক্ষক</h1>
-            <div>
+            <motion.div
+               initial={{scale : 0.5}}
+               whileInView={{scale : 1}} 
+               transition={{
+                 duration :"0.5"
+               }}
+            className='sidebarItem'>
                  {
                     info.map((info , index)=>(
                           <Info
@@ -29,7 +36,7 @@ function Principle() {
                           />
                     ))
                  }
-            </div>
+            </motion.div>
         </>
     )
 }

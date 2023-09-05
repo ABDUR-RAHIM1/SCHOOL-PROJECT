@@ -36,6 +36,7 @@
     background-color: transparent;
     border: 1px solid lightblue;
     border-radius: 5px; 
+    margin: 10px 0px;
 }
 .navbar-toggler:focus {
     outline: none !important;
@@ -50,4 +51,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: 7px;  
+}
+.dropdown-menu { 
+    border-top: 1px solid lightblue;
+    border-radius: 0; 
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0rem; 
+    padding:0;
 }

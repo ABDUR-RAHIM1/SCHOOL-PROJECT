@@ -6,6 +6,7 @@ import donar from "../../../../assets/images/donar.png"
 import labour from "../../../../assets/images/labour.png"
 import school from "../../../../assets/images/school.png"
 import InstInfo from './InstInfo'
+import { motion } from "framer-motion"
 function InstituteInfo() {
     const info = [
         { title: "ইনস্টিটিউটের বিবরণ", link: "/instiute", img: school },
@@ -18,7 +19,13 @@ function InstituteInfo() {
     return (
         <>
             <h1 className='heading'>ইনস্টিটিউট তথ্য</h1>
-            <div className='shadowStyle'>
+            <motion.div
+               initial = {{opacity :0,  scale: 0.7}}
+               whileInView = {{opacity :1,  scale: 1}}
+               transition={{
+                 duration :"0.5"
+               }}
+                className='shadowStyle'>
 
                 <div className='flex justify-between flex-wrap'>
                     {
@@ -30,7 +37,7 @@ function InstituteInfo() {
                         ))
                     }
                 </div>
-            </div>
+            </motion.div>
         </>
 
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowLeftShort } from "react-icons/bs"
+import {motion} from "framer-motion"
 function ImpotentLink() {
     const info = [
         {
@@ -27,7 +28,13 @@ function ImpotentLink() {
     return (
         <>
             <h1 className='heading'>গুরুর্তপূর্ন লিঙ্ক সমূহ</h1>
-            <div className='my-2  py-2 border-1 border-dotted border-slate-300'>
+            <motion.div
+             initial ={{ y : 50}}
+             whileInView ={{ y : 0}}
+             transition={{
+                 duration : "0.5"
+             }}
+            className='my-2  py-2 border-1 border-dotted border-slate-300'>
                 {
                     info.map((info, index) => (
                         <a className=' mt-2 text-green-600 hover:text-green-700 underline flex gap-2 items-center text-sm' key={index} target='_blank' rel='noreferrer'  href={info.link}>
@@ -36,7 +43,7 @@ function ImpotentLink() {
                         </a>
                     ))
                 }
-            </div>
+            </motion.div>
         </>
     )
 }

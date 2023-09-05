@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdNavigateBefore } from "react-icons/md"
-import {BsFacebook , BsInstagram, BsYoutube} from "react-icons/bs"
+import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs"
 import { Link } from 'react-router-dom'
 function Footer() {
   const item = [
@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <div className=' flex justify-between flex-wrap py-10 px-4 text-white bg-green-600'>
-      <div className="footerContact w-full md:w-30">
+      <div className="footerContact w-full my-4 md:w-1/3">
         <h1 className='h1 mb-3'>পপুলার দাখিল</h1>
         <p className='mt-2 text-md font-semibold'>ঠিকানা : <span className='text-sm font-normal underline '>আদিতমারী , লালমনিরহাট </span></p>
         <p className='mt-2 text-md font-semibold'>মোবাইল : <span className='text-sm font-normal underline '> 01864432943 & 01321040273 </span></p>
@@ -22,7 +22,7 @@ function Footer() {
       </div>
 
 
-      <div className="footerContact w-full md:w-30">
+      <div className="footerContact w-full my-4 md:w-30">
         <h1 className='h1 mb-3'>শর্টকাট</h1>
         <div>
           {
@@ -36,7 +36,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footerContact w-full md:w-30">
+      <div className="footerContact w-full my-4 md:w-30">
         <h1 className='h1 mb-3'>যোগাযোগ </h1>
         <div className='flex gap-4'>
           <BsFacebook className='text-2xl text-white  duration-300 cursor-pointer' />

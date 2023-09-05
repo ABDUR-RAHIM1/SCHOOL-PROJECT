@@ -1,6 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react' 
+import {motion} from "framer-motion"
 function Comitee() {
     const comitee = [
         {
@@ -29,31 +28,49 @@ function Comitee() {
             <h1 className='heading'>বর্তমান কমিটির তালিকা</h1>
             <div className='shadowStyle'>
                 <table className='mt-4 table table-responsive overflow-auto'>
-                    <thead className='w-full'>
+                    <motion.thead
+                          initial={{y : 50}}
+                          whileInView={{y : 0}}
+                          transition={{
+                              duration :"0.5"
+                          }}
+                    className='w-full'>
                         <tr>
                             <th> নাম</th>
                             <th> অবস্থান</th>
                             <th> পদবী</th>
                         </tr>
-                    </thead>
+                    </motion.thead>
                     <tbody>
                         {
                             comitee.map((cm, index) => (
-                                <tr key={index}>
+                                <motion.tr
+                                initial={{  y : -50 , opacity : 0 }}
+                                whileInView={{ y : 0 , opacity : 1 }}
+                                transition={{
+                                    duration: "0.5"
+                                }}
+                                key={index}>
                                     <td className='text-sm'>{cm.name}</td>
                                     <td className='text-sm'>{cm.title}</td>
                                     <td className='text-sm'>{cm.category}</td>
                                     <td className='text-sm'></td>
-                                </tr>
+                                </motion.tr>
                             ))
                         }
                     </tbody>
                   
                 </table>
                 <div className='text-right mt-4 w-full'>
-                        <button className='myBtn'>
+                        <motion.button
+                         initial={{x : 100 , opacity :0}}
+                         whileInView={{x : 0 , opacity :1}}
+                         transition={{
+                            duration:"0.5"
+                         }}
+                        className='myBtn'>
                             আরো দেখুন
-                        </button>
+                        </motion.button>
                     </div>
             </div>
         </>
