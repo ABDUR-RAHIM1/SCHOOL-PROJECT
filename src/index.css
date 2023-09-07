@@ -2,88 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
- @layer components{
-     .heading{
+@layer components {
+     .heading {
           @apply bg-green-700 py-3 px-1 text-white
      }
-     .items{
-          @apply flex mt-2 lg:mt-0 duration-300 items-center text-sm gap-2 py-1 px-2  border-right hover:bg-green-700 hover:text-white 
-        }
-     .myBtn{
+
+     .items {
+          @apply flex mt-2 lg:mt-0 duration-300 items-center text-sm gap-2 py-1 px-2 border-right hover:bg-green-700 hover:text-white
+     }
+
+     .myBtn {
           @apply px-3 py-2 rounded-sm text-sm bg-green-700 hover:bg-green-600 text-white font-bold uppercase
      }
-     .shadowStyle{
-            @apply shadow-md px-3 pb-5 mb-10
+
+     .shadowStyle {
+          @apply shadow-md px-3 pb-5 mb-10
      }
-     .bg{
+
+     .bg {
           @apply bg-slate-200 hover:bg-slate-300 duration-150
      }
-     .sidebarItem{
+
+     .sidebarItem {
           @apply w-72 md:w-full mx-auto
-         }
-         .lable{
-           @apply block text-gray-700 text-sm font-bold mb-1
-         }
-         .input{
-          @apply shadow appearance-none border border-green-500 rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none 
-        }
- }
+     }
 
+     .lable {
+          @apply block text-gray-700 text-sm font-bold mb-1
+     }
 
-@layer base{
-    .h1{
-         font-size: 1.5rem;
-    }
-    .border-right{
-         border-right: 1px solid rgb(176, 176, 176);
-    }
-    .active{
-         color: red;
-         font-weight: 600;
-         border-right-color: red;
-    }
-   
-    .nav-scrollbar-hide::-webkit-scrollbar{
-     display: none;
-    }
-    .sliderImg{
-      height: 275px;
-    }
-  
- 
+     .input {
+          @apply shadow appearance-none border border-green-500 rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none
+     }
+
+     /*  dashboar */
+     /* .dashboard {
+          @apply flex flex-wrap min-h-screen bg-slate-700
+     }
+
+     .sidebar {
+          @apply  px-4 h-screen overflow-y-auto overflow-x-hidden
+     }
+
+     .content {
+          @apply flex-1 bg-slate-500 text-white h-screen overflow-y-auto scrollbar-hide p-3
+     } */
+
+     /*  dashboar */
 }
- 
+
+
+@layer base {
+     .h1 {
+          font-size: 1.5rem;
+     }
+
+     .border-right {
+          border-right: 1px solid rgb(176, 176, 176);
+     }
+
+     .active {
+          color: red;
+          font-weight: 600;
+          border-right-color: red;
+     }
+
+     .nav-scrollbar-hide::-webkit-scrollbar {
+          display: none;
+     }
+
+     .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+     }
+
+     .sliderImg {
+          height: 275px;
+     }
+
+
+}
+
 
 
 /*  caruser pagination button  */
-.carousel-indicators [data-bs-target] { 
-     display: none; 
- }
+.carousel-indicators [data-bs-target] {
+     display: none;
+}
+
 /*  caruser pagination button  */
 
- body{
-    background:  linear-gradient( rgb(255, 255, 255) , rgb(230, 230, 234));
- }
- p{
+body {
+     background: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 234));
+}
+
+p {
      line-height: 1.5rem;
- }
+}
 
- .authBg{
+.authBg {
 
-     background:  linear-gradient(gray, blue);
+     background: linear-gradient(gray, blue);
      height: 500px;
- }
+}
 
- .wrapper{
+.wrapper {
      padding: 0px 1rem;
      overflow: hidden;
- }
- .helpLineImg{
-      width: 100%;
-      height: 500px;
- }
- @media screen and (min-width:768px) {
-     .wrapper{
-          padding:0px 30px;
+}
+
+.helpLineImg {
+     width: 100%;
+     height: 500px;
+}
+
+@media screen and (min-width:768px) {
+     .wrapper {
+          padding: 0px 30px;
      }
- }
+}

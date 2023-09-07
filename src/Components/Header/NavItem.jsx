@@ -9,7 +9,7 @@ import { FcAbout } from "react-icons/fc"
 function NavItem() {
   const path = useLocation().pathname
   return (
-    <Navbar collapseOnSelect expand="sm" className="bg-body-tertiary px-3">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary px-3">
 
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
