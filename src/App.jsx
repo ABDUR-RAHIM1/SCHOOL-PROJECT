@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Home from './Pages/Home/Home/Home'
 import LoginHome from './Pages/Login/LoginHome'
 import TeacherDashboard from './Components/Dashboard/TeacherDashboard/TeacherDashboard'
-import StudentDashboard from './Components/Dashboard/StudentDashboard/StudentDashboard'
+import StudentDashboard from './Components/Dashboard/StudentDashboard/StudentDashboar'
 
 function App() {
   return (

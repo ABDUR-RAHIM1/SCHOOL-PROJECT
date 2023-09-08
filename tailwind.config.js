@@ -15,6 +15,9 @@ export default {
        lineHeight: {
         'p': '1.6', 
       },
+      height: {
+        "90vh" : "90vh"
+      }
     },
   },
   plugins: [],
